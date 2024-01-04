@@ -14,15 +14,15 @@ import { Link } from "react-scroll";
 const navLinks = [
   {
     title: "PROFIL DUSUN",
-    path: "#Profil",
+    path: "profil",
   },
   {
     title: "GALERI DUSUN",
-    path: "#Galeri",
+    path: "galeri",
   },
   {
     title: "PETA DUSUN",
-    path: "#Peta",
+    path: "peta",
   },
 ];
 
@@ -53,7 +53,13 @@ const Header = () => {
       </div>
       <div className="w-screen bg-white px-3 md:px-6 xl:px-8 h-14 md:h-20 xl:h-24 flex flex-row justify-between items-center">
         <div className="flex flex-row gap-2 xl:gap-3 justify-center items-center">
-          <Link to="hero" smooth={true} offset={-200} duration={500}>
+          <Link
+            className="cursor-pointer"
+            to="hero"
+            smooth={true}
+            offset={-200}
+            duration={500}
+          >
             <img src="/images/Logo.png" className="w-7 md:w-10 xl:w-12"></img>
           </Link>
           <div className="flex flex-col">
