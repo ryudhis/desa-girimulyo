@@ -14,7 +14,7 @@ import { Link } from "react-scroll";
 const navLinks = [
   {
     title: "PROFIL DUSUN",
-    path: "#profil",
+    path: "#Profil",
   },
   {
     title: "GALERI DUSUN",
