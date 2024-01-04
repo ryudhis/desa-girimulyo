@@ -15,7 +15,7 @@ const NavLink = ({ href, title }) => {
   return (
     <a
       href={href}
-      className="block py-2 pl-3 pr-4 text-[#107C41] sm:text-xl font-semibold rounded md:p-0 hover:text-slate-500"
+      className="block py-2 pl-3 pr-4 text-[#107C41] md:text-base xl:text-xl font-semibold rounded md:p-0 hover:text-slate-500"
       onClick={scrollToSection}
     >
       {title}
