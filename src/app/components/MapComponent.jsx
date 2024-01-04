@@ -60,8 +60,6 @@ const MapComponent = () => {
       }
     };
 
-    console.log("saya terpanggil");
-
     useEffect(()=>{
       initMap();
     }, []);
