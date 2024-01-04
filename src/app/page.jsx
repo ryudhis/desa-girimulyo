@@ -4,13 +4,13 @@ import Profile from "./components/Profile";
 import Gallery from "./components/Gallery";
 import Maps from "./components/Maps";
 import Footer from "./components/Footer";
-import Carousel from "./components/Carousel";
+import Hero from "./components/Hero";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main>
       <Header />
-      <Carousel />
+      <Hero />
       <Profile />
       <Gallery />
       <Maps />
