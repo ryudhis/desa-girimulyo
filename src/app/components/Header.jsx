@@ -13,7 +13,7 @@ import {
 const navLinks = [
   {
     title: "PROFIL DUSUN",
-    path: "#profil",
+    path: "#Profil",
   },
   {
     title: "GALERI DUSUN",
