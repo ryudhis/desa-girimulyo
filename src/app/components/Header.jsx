@@ -36,37 +36,39 @@ const Header = () => {
   };
   return (
     <nav className="fixed top-0 left-0 right-0 z-10">
-      <div className="flex flex-row px-4 xl:px-10 justify-between items-center w-screen h-12 xl:h-14 bg-[#107C41]">
+      <div className="flex flex-row px-4 xl:px-10 justify-between items-center w-screen h-12 md:h-[52px] xl:h-14 bg-[#107C41]">
         <div className="flex flex-row gap-1 justify-center items-center">
-          <PhoneIcon className="h-3 xl:h-4 w-3 xl:w-4 text-white" />
-          <p className="text-white text-[8px] xl:text-base font-extralight xl:font-normal">
+          <PhoneIcon className="h-3 md:h-3.5 xl:h-4 w-3 md:w-3.5 xl:w-4 text-white" />
+          <p className="text-white text-[8px] md:text-sm xl:text-base font-extralight xl:font-normal">
             0831-88889999
           </p>
-          <p className="text-white text-[8px] xl:text-base font-extralight xl:font-normal">
+          <p className="text-white text-[8px] md:text-sm xl:text-base font-extralight xl:font-normal">
             |
           </p>
-          <EnvelopeIcon className="h-3 xl:h-4 w-3 xl:w-4 text-white" />
-          <p className="text-white text-[8px] xl:text-base font-extralight xl:font-normal">
+          <EnvelopeIcon className="h-3 md:h-3.5 xl:h-4 w-3 md:w-3.5 xl:w-4 text-white" />
+          <p className="text-white text-[8px] md:text-sm xl:text-base font-extralight xl:font-normal">
             emaildesa@gmail.co.id
           </p>
         </div>
         <div className="flex flex-row gap-1 justify-center items-center">
-          <GlobeAsiaAustraliaIcon className="h-3 xl:h-4 w-3 xl:w-4 text-white" />
-          <p className="text-white text-[8px] xl:text-base font-extralight xl:font-normal">
+          <GlobeAsiaAustraliaIcon className="h-3 md:h-3.5 xl:h-4 w-3 md:w-3.5 xl:w-4 text-white" />
+          <p className="text-white text-[8px] md:text-sm xl:text-base font-extralight xl:font-normal">
             Kabupaten Lampung Timur
           </p>
         </div>
       </div>
-      <div className="w-screen bg-white px-3 xl:px-8 h-14 xl:h-24 flex flex-row justify-between items-center">
+      <div className="w-screen bg-white px-3 md:px-6 xl:px-8 h-14 md:h-20 xl:h-24 flex flex-row justify-between items-center">
         <div className="flex flex-row gap-2 xl:gap-3 justify-center items-center">
           <a href="/" onClick={scrollToTop}>
-            <img src="/images/Logo.png" className="w-7 xl:w-12"></img>
+            <img src="/images/Logo.png" className="w-7 md:w-10 xl:w-12"></img>
           </a>
           <div className="flex flex-col">
-            <p className="font-bold text-sm xl:text-lg">
+            <p className="font-bold text-sm md:text-sm xl:text-lg">
               Dusun 10 Desa Giri Mulyo
             </p>
-            <p className="text-sm xl:text-lg">Kabupaten Lampung Timur</p>
+            <p className="text-sm md:text-sm xl:text-lg">
+              Kabupaten Lampung Timur
+            </p>
           </div>
         </div>
         <div className="mobile-menu block md:hidden">
