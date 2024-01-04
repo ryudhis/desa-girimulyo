@@ -6,16 +6,10 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-<<<<<<< Updated upstream
     fontFamily: {
       sans: ["Poppins", "sans-serif"],
     },
 
-=======
-    fontFamily:{
-      sans : ['Poppins', 'sans-serif'],
-    },
->>>>>>> Stashed changes
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
