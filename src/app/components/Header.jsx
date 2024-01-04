@@ -14,22 +14,22 @@ import { Link } from "react-scroll";
 const navLinks = [
   {
     title: "PROFIL DUSUN",
-    path: "#Profil",
+    path: "profil",
   },
   {
     title: "GALERI DUSUN",
-    path: "#Galeri",
+    path: "galeri",
   },
   {
     title: "PETA DUSUN",
-    path: "#Peta",
+    path: "peta",
   },
 ];
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10">
+    <nav className="fixed top-0 left-0 right-0 z-20">
       <div className="flex flex-row px-4 xl:px-10 justify-between items-center w-screen h-12 md:h-[52px] xl:h-14 bg-[#107C41]">
         <div className="flex flex-row gap-1 justify-center items-center">
           <PhoneIcon className="h-3 md:h-3.5 xl:h-4 w-3 md:w-3.5 xl:w-4 text-white" />
@@ -53,7 +53,13 @@ const Header = () => {
       </div>
       <div className="w-screen bg-white px-3 md:px-6 xl:px-8 h-14 md:h-20 xl:h-24 flex flex-row justify-between items-center">
         <div className="flex flex-row gap-2 xl:gap-3 justify-center items-center">
-          <Link to="hero" smooth={true} offset={-200} duration={500}>
+          <Link
+            className="cursor-pointer"
+            to="hero"
+            smooth={true}
+            offset={-200}
+            duration={500}
+          >
             <img src="/images/Logo.png" className="w-7 md:w-10 xl:w-12"></img>
           </Link>
           <div className="flex flex-col">
