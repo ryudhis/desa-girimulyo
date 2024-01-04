@@ -9,6 +9,7 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
+import { Link } from "react-scroll";
 
 const navLinks = [
   {
@@ -27,13 +28,6 @@ const navLinks = [
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const scrollToTop = (event) => {
-    event.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
   return (
     <nav className="fixed top-0 left-0 right-0 z-10">
       <div className="flex flex-row px-4 xl:px-10 justify-between items-center w-screen h-12 md:h-[52px] xl:h-14 bg-[#107C41]">
@@ -59,9 +53,9 @@ const Header = () => {
       </div>
       <div className="w-screen bg-white px-3 md:px-6 xl:px-8 h-14 md:h-20 xl:h-24 flex flex-row justify-between items-center">
         <div className="flex flex-row gap-2 xl:gap-3 justify-center items-center">
-          <a href="/" onClick={scrollToTop}>
+          <Link to="hero" smooth={true} offset={-200} duration={500}>
             <img src="/images/Logo.png" className="w-7 md:w-10 xl:w-12"></img>
-          </a>
+          </Link>
           <div className="flex flex-col">
             <p className="font-bold text-sm md:text-sm xl:text-lg">
               Dusun 10 Desa Giri Mulyo
