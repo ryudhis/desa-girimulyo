@@ -1,4 +1,4 @@
-import Image from "next/image";
+//import Image from "next/image";
 import Header from "./components/Header";
 import Profile from "./components/Profile";
 import Gallery from "./components/Gallery";
