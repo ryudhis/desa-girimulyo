@@ -3,7 +3,7 @@ import React from "react";
 
 const Profile = () => {
   return (
-    <div id="Profil" className="flex flex-col items-center mt-2">
+    <div id="profil" className="flex flex-col items-center mt-2">
       <div className="text-[#107C41] text-[15px] font-bold border-b-[1px] border-[#107C41] w-[340px]">
         <div className="pl-1">Profil Dusun</div>
       </div>
