@@ -64,7 +64,7 @@ const MapComponent = () => {
       initMap();
     }, []);
 
-  return <div id="viewDiv" className='w-[93vw] h-[250px]' />;
+  return <div id="viewDiv" className='w-[93vw] md:w-[94vw] xl:w-[96vw] h-[200px] md:h-[250px] xl:h-[350px]' />;
 };
 
 export default MapComponent;

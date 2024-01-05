@@ -3,17 +3,20 @@ import MapComponent from "./MapComponent";
 
 const Maps = () => {
   return (
-    <div id="peta" className="flex flex-col items-center">
-      <div className="text-slate-800 text-[15px] font-extrabold bg-[#e8f0e6] w-[90vw] mr-2 mb-4">
+    <div id="peta" className="flex flex-col items-center bg-[#FDFDF6]">
+      <div className="text-slate-800 text-[15px] md:text-[18px] xl:text-[22px] font-extrabold bg-[#e8f0e6] w-[93vw] md:w-[94vw] xl:w-[96vw] mb-2 mt-2">
         <div className="pl-3">Peta Dusun</div>
       </div>
       <div>
         <MapComponent />
       </div>
-      <div className="grid grid-cols-2 gap-20 text-[10px]">
-        <div className="flex flex-col">
+      <div className=" bg-[#c4c5c4] hover:bg-[#d4d4d4] text-[12px] md:text-[14px] xl:text-[18px] font-semibold w-[100px] md:w-[140px] xl:w-[180px] text-center mt-3 rounded-md active:translate-y-1 transition ease-in-out">
+        <p>Lihat Peta</p>
+      </div>
+      <div className="grid grid-cols-2 gap-[60px] md:gap-[30vw] xl:gap-[30vw] xl:mr-[200px] text-[10px] md:text-[15px] xl:text-[20px] mt-3">
+        <div className="flex flex-col text-[#33363F] font-bold">
           <p className="mb-4">Keterangan Gambar Peta</p>
-          <p>Tipologi</p>
+          <p>Topologi</p>
           <p>Klasifikasi</p>
           <p>Kategori</p>
           <p>Luas Wilayah</p>
@@ -22,16 +25,16 @@ const Maps = () => {
           <p>Batas Sebelah Timur</p>
           <p>Batas Sebelah Barat</p>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col text-[#33363F]">
           <p className="mb-4">Keterangan Gambar Peta</p>
-          <p>: PERINDUSTRIAN/JASA</p>
-          <p>: SWAKARYA</p>
-          <p>: MULA</p>
-          <p>: 305.28 ha</p>
-          <p>: Dusun 11</p>
-          <p>: Dusun 9</p>
-          <p>: Dusun 12</p>
-          <p>: Dusun 8</p>
+          <p>: &nbsp; PERINDUSTRIAN/JASA</p>
+          <p>: &nbsp; SWAKARYA</p>
+          <p>: &nbsp; MULA</p>
+          <p>: &nbsp; 305.28 ha</p>
+          <p>: &nbsp; Dusun 11</p>
+          <p>: &nbsp; Dusun 9</p>
+          <p>: &nbsp; Dusun 12</p>
+          <p>: &nbsp; Dusun 8</p>
         </div>
       </div>
     </div>
