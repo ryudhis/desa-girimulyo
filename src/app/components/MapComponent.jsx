@@ -11,20 +11,15 @@ const MapComponent = () => {
           esriConfig,
           WebMap,
           MapView,
-          ScaleBar,
-          Legend,
-          Editor
         ] = await loadModules([
           'esri/config',
           'esri/WebMap',
           'esri/views/MapView',
-          'esri/widgets/ScaleBar',
-          'esri/widgets/Legend',
         ]);
 
         // Set the API key
         esriConfig.apiKey =
-          'AAPK520d32df90914204917ac2d13163ddf5yHGdXED-1zrPeefPkoWRWITVsRjNsT4Wu4XJvKLdyOHXAu4fjo4iUUQoHpGBrTqX';
+          'AAPKca075d6f572f4dca93e2ca65ab5d9e82cYUJxP885KUznqys4px8KMYgYyn7Nahp7QHA2a51OgRP2pKs-wyM_hR1dl7OU0-f';
 
         // Load additional styles for widgets
         await loadModules(['esri/widgets/support/widget', 'esri/widgets/Widget'], {
@@ -34,7 +29,7 @@ const MapComponent = () => {
         // Load webmap
         const webmap = new WebMap({
           portalItem: {
-            id: 'b30dd78f3530473a868b700ebe918517'
+            id: '5599e6326a52467cb9a3fe32908d6ab3'
           }
         });
 
@@ -44,17 +39,6 @@ const MapComponent = () => {
           map: webmap
         });
 
-        // // Add ScaleBar
-        // const scalebar = new ScaleBar({
-        //   view: view
-        // });
-        // view.ui.add(scalebar, 'bottom-left');
-
-        // // Add Legend
-        // const legend = new Legend({
-        //   view: view
-        // });
-        // view.ui.add(legend, 'top-right');
       } catch (error) {
         console.error('Error loading ArcGIS modules:', error);
       }

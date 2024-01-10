@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://js.arcgis.com/4.27/esri/themes/light/main.css"
         />
+        <script src="https://js.arcgis.com/4.27/"></script>
       </head>
       <body className={poppins.className}>{children}</body>
     </html>
