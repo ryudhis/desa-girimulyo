@@ -29,7 +29,7 @@ const MapComponent = () => {
         // Load webmap
         const webmap = new WebMap({
           portalItem: {
-            id: '5599e6326a52467cb9a3fe32908d6ab3'
+            id: 'd8e6235848f9434a9cadeeb0bab08ee0'
           }
         });
 
