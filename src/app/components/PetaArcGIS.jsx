@@ -84,7 +84,7 @@ const PetaArcGIS = () => {
           e.preventDefault();
           toggleLegend(); 
         }}
-        className="bg-slate-300 hover:bg-slate-400 text-[13px] md:text-[14px] xl:text-[18px] font-semibold w-[100px] h-[20px] md:w-[140px] md:h-[25px]  xl:w-[180px] xl:h-[30px] text-center rounded-md self-end left-1 bottom-1 xl:left-2 xl:bottom-2 z-50 absolute"
+        className="bg-slate-300 hover:bg-slate-400 text-[13px] md:text-[14px] xl:text-[18px] font-semibold w-[100px] h-[20px] md:w-[140px] md:h-[25px]  xl:w-[180px] xl:h-[30px] text-center rounded-md self-end left-1 bottom-1 md:left-16 md:top-4 xl:left-20 xl:top-4 z-50 absolute"
       >
         Legenda
       </button>
