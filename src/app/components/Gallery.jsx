@@ -49,6 +49,18 @@ const imageGallery = [
       "Panen Alpukat Siger di Desa Girimulyo, Marga Sekampung, Lampung Timur",
     desc: "Berkesempatan hadir saat panen alpukat dari satu pohon di halaman rumah Pak Muhajir, warga Desa Girimulyo, Kecamatan Sekampung Udik, Lampung Timur. Dari 1 pohon tersebut menghasilkan sekitar 100 kilogram buah alpukat. Yang super mungkin sekitar 40an kg dari pohon tersebut.",
   },
+  {
+    imageSrc: "images/img3.png",
+    title:
+      "Panen Alpukat Siger di Desa Girimulyo, Marga Sekampung, Lampung Timur",
+    desc: "Berkesempatan hadir saat panen alpukat dari satu pohon di halaman rumah Pak Muhajir, warga Desa Girimulyo, Kecamatan Sekampung Udik, Lampung Timur. Dari 1 pohon tersebut menghasilkan sekitar 100 kilogram buah alpukat. Yang super mungkin sekitar 40an kg dari pohon tersebut.",
+  },
+  {
+    imageSrc: "images/img3.png",
+    title:
+      "Panen Alpukat Siger di Desa Girimulyo, Marga Sekampung, Lampung Timur",
+    desc: "Berkesempatan hadir saat panen alpukat dari satu pohon di halaman rumah Pak Muhajir, warga Desa Girimulyo, Kecamatan Sekampung Udik, Lampung Timur. Dari 1 pohon tersebut menghasilkan sekitar 100 kilogram buah alpukat. Yang super mungkin sekitar 40an kg dari pohon tersebut.",
+  },
 ];
 
 const Gallery = () => {
@@ -89,7 +101,7 @@ const Gallery = () => {
         onClick={handleClick}
         className=" bg-[#c4c5c4] hover:bg-[#d4d4d4] text-[12px] md:text-[14px] xl:text-[18px] font-semibold w-[100px] md:w-[140px] xl:w-[180px] text-center mb-1 mt-[-2px] rounded-md active:translate-y-1 transition ease-in-out"
       >
-        Buka Galeri
+        {isToggle ? "Tutup Galeri" : "Buka Galeri"}
       </button>
     </div>
   );
