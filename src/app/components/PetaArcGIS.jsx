@@ -1,78 +1,97 @@
-"use client"
+"use client";
 
 // pages/index.js
-import { useEffect } from 'react';
-import { loadModules } from 'esri-loader';
+import { useEffect, useState } from "react";
+import { loadModules } from "esri-loader";
 
 const PetaArcGIS = () => {
+  const [isLegend, setIsLegend] = useState(true);
+
+  const toggleLegend = () => {
+    setIsLegend(!isLegend);
+    console.log(isLegend);
+  };
+
   const initMap = async () => {
     try {
-      const [
-        esriConfig,
-        WebMap,
-        MapView,
-        ScaleBar,
-        Legend,
-        LayerList, // Import LayerList module
-      ] = await loadModules([
-        'esri/config',
-        'esri/WebMap',
-        'esri/views/MapView',
-        'esri/widgets/ScaleBar',
-        'esri/widgets/Legend',
-        'esri/widgets/LayerList', // Add LayerList to the list
-      ]);
+      const [esriConfig, WebMap, MapView, ScaleBar, Legend, LayerList] =
+        await loadModules([
+          "esri/config",
+          "esri/WebMap",
+          "esri/views/MapView",
+          "esri/widgets/ScaleBar",
+          "esri/widgets/Legend",
+          "esri/widgets/LayerList",
+        ]);
 
       // Set the API key
       esriConfig.apiKey =
-        'AAPKca075d6f572f4dca93e2ca65ab5d9e82cYUJxP885KUznqys4px8KMYgYyn7Nahp7QHA2a51OgRP2pKs-wyM_hR1dl7OU0-f';
+        "AAPKca075d6f572f4dca93e2ca65ab5d9e82cYUJxP885KUznqys4px8KMYgYyn7Nahp7QHA2a51OgRP2pKs-wyM_hR1dl7OU0-f";
 
       // Load additional styles for widgets
-      await loadModules(['esri/widgets/support/widget', 'esri/widgets/Widget'], {
-        css: 'https://js.arcgis.com/4.27/esri/widgets/support/widget.css'
-      });
+      await loadModules(
+        ["esri/widgets/support/widget", "esri/widgets/Widget"],
+        {
+          css: "https://js.arcgis.com/4.27/esri/widgets/support/widget.css",
+        }
+      );
 
       // Load webmap
       const webmap = new WebMap({
         portalItem: {
-          id: 'd8e6235848f9434a9cadeeb0bab08ee0'
-        }
+          id: "d8e6235848f9434a9cadeeb0bab08ee0",
+        },
       });
 
       // Create a MapView
       const view = new MapView({
-        container: 'viewDiv',
-        map: webmap
+        container: "viewDiv",
+        map: webmap,
       });
 
       // Add ScaleBar
       const scalebar = new ScaleBar({
-        view: view
+        view: view,
       });
-      view.ui.add(scalebar, 'bottom-left');
+      view.ui.add(scalebar, "bottom-left");
 
       // Add Legend
-      const legend = new Legend({
-        view: view
-      });
-      view.ui.add(legend, 'top-right');
+      if(isLegend){
+        const legend = new Legend({
+          view: view,
+        });
+        view.ui.add(legend, "top-right");
+      }
 
       // Add LayerList
       const layerList = new LayerList({
         view: view,
       });
-      view.ui.add(layerList, 'bottom-right'); // Add LayerList widget to the top-right corner
-      
+      view.ui.add(layerList, "bottom-right");
     } catch (error) {
-      console.error('Error loading ArcGIS modules:', error);
+      console.error("Error loading ArcGIS modules:", error);
     }
   };
 
   useEffect(() => {
     initMap();
-  }, []);
+  }, [isLegend]);
 
-  return <div id="viewDiv" className='w-[100vwx] h-[100vh]' />;
+  return (
+    <div className="flex flex-col bg-white">
+      <button
+        onClick={(e) => {
+          e.preventDefault();
+          toggleLegend(); 
+        }}
+        className="bg-slate-300 hover:bg-slate-400 text-[13px] md:text-[14px] xl:text-[18px] font-semibold w-[100px] h-[20px] md:w-[140px] md:h-[25px]  xl:w-[180px] xl:h-[30px] text-center rounded-md self-end left-1 bottom-1 xl:left-2 xl:bottom-2 z-50 absolute"
+      >
+        Legenda
+      </button>
+
+      <div id="viewDiv" className="w-[100vwx] h-[100vh]" />
+    </div>
+  );
 };
 
 export default PetaArcGIS;

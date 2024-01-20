@@ -21,20 +21,20 @@ const imageGallery= [
 
 const Gallery = () => {
   return (
-    <div id="galeri" className="text-[10px] md:text-[15px]">
-      <h1 className="text-[#107C41] mx-3 border-b-2 border-[#107C41] xl:text-[32px] xl:mt-3 xl:mb-4">
-        Galeri Dusun 10
-      </h1>
+    <div id="galeri" className="text-[10px] md:text-[15px] flex flex-col items-center">
+      <div className="text-[#107C41] text-[15px] md:text-[18px] xl:text-[25px] font-bold border-b-[2px] border-[#107C41] w-[93vw] md:w-[94vw] xl:w-[96vw]">
+        <div className="">Galeri Dusun 10</div>
+      </div>
     
       {imageGallery.map((content,index) => (
       <div key={index} className="grid md:grid-flow-col">
-        <div className="mt-[9px] w-[335px] md:w-[235px] h-[119px] md:h-[176px] mx-auto mb-2 overflow-hidden md:ml-[34px] xl:w-[302px] xl:has-[225px] ">
+        <div className="mt-[9px] w-[335px] md:w-[235px] h-[119px] md:h-[176px] mx-auto overflow-hidden md:ml-[34px] xl:w-[302px] xl:has-[225px] ">
           <img
             className="object-center object-cover w-full h-full"
             src={content.imageSrc}
           />
         </div>
-        <div>
+        <div className="p-3 text-justify">
           <h1 className="text-[#107C41] font-bold md:ml-[10px] md:mr-[29px] xl:text-[24px]">
             {content.title}
           </h1>
@@ -44,6 +44,11 @@ const Gallery = () => {
         </div>
       </div>
       ))}
+      <button
+        className=" bg-[#c4c5c4] hover:bg-[#d4d4d4] text-[12px] md:text-[14px] xl:text-[18px] font-semibold w-[100px] md:w-[140px] xl:w-[180px] text-center mb-1 mt-[-2px] rounded-md active:translate-y-1 transition ease-in-out"
+      >
+        Buka Galeri
+      </button>
     </div>
   );
 };
