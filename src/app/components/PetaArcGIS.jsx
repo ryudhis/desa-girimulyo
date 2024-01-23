@@ -1,8 +1,8 @@
 "use client";
 
-// pages/index.js
 import { useEffect, useState } from "react";
 import { loadModules } from "esri-loader";
+import { TbMapSearch } from "react-icons/tb";
 
 const PetaArcGIS = () => {
   const [isLegend, setIsLegend] = useState(true);
@@ -84,9 +84,19 @@ const PetaArcGIS = () => {
           e.preventDefault();
           toggleLegend(); 
         }}
-        className="bg-slate-300 hover:bg-slate-400 text-[13px] md:text-[14px] xl:text-[18px] font-semibold w-[100px] h-[20px] md:w-[140px] md:h-[25px]  xl:w-[180px] xl:h-[30px] text-center rounded-md self-end left-1 bottom-1 md:left-16 md:top-4 xl:left-20 xl:top-4 z-50 absolute"
+        className="bg-slate-300 hover:bg-slate-400 hidden md:block md:text-[14px] xl:text-[18px] font-semibold w-[100px] h-[20px] md:w-[140px] md:h-[25px]  xl:w-[180px] xl:h-[30px] text-center rounded-md self-end left-1 bottom-1 md:left-16 md:top-4 xl:left-20 xl:top-4 z-50 absolute"
       >
         Legenda
+      </button>
+
+      <button
+        onClick={(e) => {
+          e.preventDefault();
+          toggleLegend(); 
+        }}
+        className="bg-slate-300 hover:bg-slate-400 md:hidden font-semibold w-[30px] h-[30px] flex items-center justify-center rounded-md top-[90px] left-4  z-50 absolute"
+      >
+        <TbMapSearch className="w-5 h-5" />
       </button>
 
       <div id="viewDiv" className="w-[100vwx] h-[100vh]" />
