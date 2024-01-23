@@ -39,7 +39,7 @@ const PetaArcGIS = () => {
       // Load webmap
       const webmap = new WebMap({
         portalItem: {
-          id: "d8e6235848f9434a9cadeeb0bab08ee0",
+          id: "f3f426905a964dfd8b2ae73756fce077",
         },
       });
 
@@ -53,7 +53,7 @@ const PetaArcGIS = () => {
       const scalebar = new ScaleBar({
         view: view,
       });
-      view.ui.add(scalebar, "bottom-left");
+      view.ui.add(scalebar, "bottom-right");
 
       // Add Legend
       if(isLegend){
@@ -67,7 +67,7 @@ const PetaArcGIS = () => {
       const layerList = new LayerList({
         view: view,
       });
-      view.ui.add(layerList, "bottom-right");
+      view.ui.add(layerList, "bottom-left");
     } catch (error) {
       console.error("Error loading ArcGIS modules:", error);
     }

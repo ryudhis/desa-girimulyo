@@ -1,67 +1,40 @@
 "use client";
 import React, { useState } from "react";
+import { BsChevronDoubleDown, BsChevronDoubleUp } from "react-icons/bs";
 
 const imageGallery = [
   {
-    imageSrc: "images/img1.png",
-    title: "Menembus Kegelapan Gua Pandan di Desa Girimulyo Lampung Timur",
-    desc: "Gua Pandan terletak di Desa Giri Mulyo, Kecamatan Marga sekampung, Kabupaten Lampung Timur. Untuk mencapai Gua Pandan menghabiskanwaktu 30 menit dari Dusun 10 dengan menggunakan kendaraan bermotor. Gua Pandan dikelilingi dengan pohon pepaya california yang sangat lebat.",
+    imageSrc: "images/img1.jpg",
+    title: "Lapangan Voli",
+    desc: 'Lapangan voli di dusun 10 adalah salah satu sarana olahraga yang ada di Desa Girimulyo. Lapangan voli ini kerap digunakan warga, bukan hanya dari dusun 10, namun juga warga dari Desa Girimulyo. Lapangan voli di Dusun 10 adalah sarana yang selalu ramai, terutama di sore hari karena digunakan oleh warga, pemuda/i, dan anak-anak untuk bermain voli maupun sekedar berkumpul.',
   },
   {
-    imageSrc: "images/img2.png",
+    imageSrc: "images/img2.jpg",
     title:
-      "Pembangunan Desa Girimulyo Kec.Marga Sekampung Kab.Lampung Timur Pesat di Pimpin Kades Echwanudin",
-    desc: "Pembangunan Desa Girimulyo Kec.Marga Sekampung Kab.Lampung Timur Pesat di Pimpin Kades Echwanudin. Pembangunan dilakukan setiap hari dengan pantauan yang rutin oleh pihak desa agar berjalan dengan kondusif.",
+      "Pasar semut",
+    desc: "Dusun 10 menjadi pusat kegiatan ekonomi karena terdapat pasar yang dibangun didalamnya. Pasar semut ini dibuka pada hari Selasa dan Sabtu. Pada hari-hari tersebut, warga dari semua dusun menjajakan jualannya. Pasar semut ini menjual makanan, pakaian, jajanan, hingga alat-alat rumah tangga. Pasar semut buka dari pagi hingga maksimal pukul 12.00 siang.",
   },
   {
-    imageSrc: "images/img3.png",
+    imageSrc: "images/img3.jpg",
     title:
-      "Panen Alpukat Siger di Desa Girimulyo, Marga Sekampung, Lampung Timur",
-    desc: "Berkesempatan hadir saat panen alpukat dari satu pohon di halaman rumah Pak Muhajir, warga Desa Girimulyo, Kecamatan Sekampung Udik, Lampung Timur. Dari 1 pohon tersebut menghasilkan sekitar 100 kilogram buah alpukat. Yang super mungkin sekitar 40an kg dari pohon tersebut.",
+      "Kebudayaan",
+    desc: "Setiap tempat memiliki kebudayaan masing-masing, begitupun dengan Desa Giri Mulyo khususnya dusun 10. Kegiatan kebudayaan yang sering diadakan pada dusun 10 ini yaitu kesenian seperti seni tari Jaranan.",
   },
   {
-    imageSrc: "images/img3.png",
-    title:
-      "Panen Alpukat Siger di Desa Girimulyo, Marga Sekampung, Lampung Timur",
-    desc: "Berkesempatan hadir saat panen alpukat dari satu pohon di halaman rumah Pak Muhajir, warga Desa Girimulyo, Kecamatan Sekampung Udik, Lampung Timur. Dari 1 pohon tersebut menghasilkan sekitar 100 kilogram buah alpukat. Yang super mungkin sekitar 40an kg dari pohon tersebut.",
-  },
-  {
-    imageSrc: "images/img3.png",
+    imageSrc: "images/img4.jpg",
     title:
       "Panen Alpukat Siger di Desa Girimulyo, Marga Sekampung, Lampung Timur",
     desc: "Berkesempatan hadir saat panen alpukat dari satu pohon di halaman rumah Pak Muhajir, warga Desa Girimulyo, Kecamatan Sekampung Udik, Lampung Timur. Dari 1 pohon tersebut menghasilkan sekitar 100 kilogram buah alpukat. Yang super mungkin sekitar 40an kg dari pohon tersebut.",
   },
   {
-    imageSrc: "images/img3.png",
+    imageSrc: "images/img5.jpg",
     title:
       "Panen Alpukat Siger di Desa Girimulyo, Marga Sekampung, Lampung Timur",
     desc: "Berkesempatan hadir saat panen alpukat dari satu pohon di halaman rumah Pak Muhajir, warga Desa Girimulyo, Kecamatan Sekampung Udik, Lampung Timur. Dari 1 pohon tersebut menghasilkan sekitar 100 kilogram buah alpukat. Yang super mungkin sekitar 40an kg dari pohon tersebut.",
   },
-  {
-    imageSrc: "images/img3.png",
-    title:
-      "Panen Alpukat Siger di Desa Girimulyo, Marga Sekampung, Lampung Timur",
-    desc: "Berkesempatan hadir saat panen alpukat dari satu pohon di halaman rumah Pak Muhajir, warga Desa Girimulyo, Kecamatan Sekampung Udik, Lampung Timur. Dari 1 pohon tersebut menghasilkan sekitar 100 kilogram buah alpukat. Yang super mungkin sekitar 40an kg dari pohon tersebut.",
-  },
-  {
-    imageSrc: "images/img3.png",
-    title:
-      "Panen Alpukat Siger di Desa Girimulyo, Marga Sekampung, Lampung Timur",
-    desc: "Berkesempatan hadir saat panen alpukat dari satu pohon di halaman rumah Pak Muhajir, warga Desa Girimulyo, Kecamatan Sekampung Udik, Lampung Timur. Dari 1 pohon tersebut menghasilkan sekitar 100 kilogram buah alpukat. Yang super mungkin sekitar 40an kg dari pohon tersebut.",
-  },
-  {
-    imageSrc: "images/img3.png",
-    title:
-      "Panen Alpukat Siger di Desa Girimulyo, Marga Sekampung, Lampung Timur",
-    desc: "Berkesempatan hadir saat panen alpukat dari satu pohon di halaman rumah Pak Muhajir, warga Desa Girimulyo, Kecamatan Sekampung Udik, Lampung Timur. Dari 1 pohon tersebut menghasilkan sekitar 100 kilogram buah alpukat. Yang super mungkin sekitar 40an kg dari pohon tersebut.",
-  },
-  {
-    imageSrc: "images/img3.png",
-    title:
-      "Panen Alpukat Siger di Desa Girimulyo, Marga Sekampung, Lampung Timur",
-    desc: "Berkesempatan hadir saat panen alpukat dari satu pohon di halaman rumah Pak Muhajir, warga Desa Girimulyo, Kecamatan Sekampung Udik, Lampung Timur. Dari 1 pohon tersebut menghasilkan sekitar 100 kilogram buah alpukat. Yang super mungkin sekitar 40an kg dari pohon tersebut.",
-  },
+  
 ];
+
 
 const Gallery = () => {
   const [isToggle, setIsToggle] = useState(false);
@@ -70,6 +43,7 @@ const Gallery = () => {
     setIsToggle(!isToggle);
   };
   const renderItems = isToggle ? imageGallery : imageGallery.slice(0, 3);
+
   return (
     <div
       id="galeri"
@@ -82,10 +56,7 @@ const Gallery = () => {
       {renderItems.map((content, index) => (
         <div key={index} className="grid md:grid-flow-col">
           <div className="mt-[9px] w-[335px] md:w-[235px] h-[119px] md:h-[176px] mx-auto overflow-hidden md:ml-[34px] xl:w-[302px] xl:has-[225px] ">
-            <img
-              className="object-center object-cover w-full h-full"
-              src={content.imageSrc}
-            />
+            <img className="object-center object-cover w-full h-full" src={content.imageSrc}/>
           </div>
           <div className="p-3 text-justify">
             <h1 className="text-[#107C41] font-bold md:ml-[10px] md:mr-[29px] xl:text-[24px]">
@@ -99,9 +70,9 @@ const Gallery = () => {
       ))}
       <button
         onClick={handleClick}
-        className=" bg-[#c4c5c4] hover:bg-[#d4d4d4] text-[12px] md:text-[14px] xl:text-[18px] font-semibold w-[100px] md:w-[140px] xl:w-[180px] text-center mb-1 mt-[-2px] rounded-md active:translate-y-1 transition ease-in-out"
+        className="text-[12px] md:text-[14px] xl:text-[18px] font-semibold w-[100px] md:w-[140px] xl:w-[180px] text-center mb-1 mt-[-2px] rounded-md active:translate-y-1 transition ease-in-out"
       >
-        {isToggle ? "Tutup Galeri" : "Buka Galeri"}
+        {isToggle ? <BsChevronDoubleUp className='scale-[3] mt-8 mb-4 mx-auto'/> : <BsChevronDoubleDown className="scale-[3] mt-8 mb-4 mx-auto" />}
       </button>
     </div>
   );
