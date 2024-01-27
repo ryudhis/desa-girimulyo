@@ -59,7 +59,7 @@ const Gallery = () => {
   return (
     <div
       id="galeri"
-      className="text-[10px] md:text-[15px] flex flex-col items-center"
+      className="text-[10px] md:text-[15px] flex flex-col items-center text-[#5c616e]"
     >
       <div className="text-[#107C41] text-[15px] md:text-[18px] xl:text-[25px] font-bold border-b-[2px] border-[#107C41] w-[93vw] md:w-[94vw] xl:w-[96vw]">
         <div className="">Galeri Dusun 10</div>
