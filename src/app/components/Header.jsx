@@ -4,7 +4,7 @@ import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
 import {
   PhoneIcon,
-  EnvelopeIcon,
+  //EnvelopeIcon,
   GlobeAsiaAustraliaIcon,
   Bars3Icon,
   XMarkIcon,
@@ -34,15 +34,18 @@ const Header = () => {
         <div className="flex flex-row gap-1 justify-center items-center">
           <PhoneIcon className="h-3 md:h-3.5 xl:h-4 w-3 md:w-3.5 xl:w-4 text-white" />
           <p className="text-white text-[8px] md:text-sm xl:text-base font-extralight xl:font-normal">
-            0831-88889999
+            +6282280966558
           </p>
-          <p className="text-white text-[8px] md:text-sm xl:text-base font-extralight xl:font-normal">
+
+          {/* Untuk email desa masih dikomen */}
+
+          {/* <p className="text-white text-[8px] md:text-sm xl:text-base font-extralight xl:font-normal">
             |
           </p>
           <EnvelopeIcon className="h-3 md:h-3.5 xl:h-4 w-3 md:w-3.5 xl:w-4 text-white" />
           <p className="text-white text-[8px] md:text-sm xl:text-base font-extralight xl:font-normal">
             emaildesa@gmail.co.id
-          </p>
+          </p> */}
         </div>
         <div className="flex flex-row gap-1 justify-center items-center">
           <GlobeAsiaAustraliaIcon className="h-3 md:h-3.5 xl:h-4 w-3 md:w-3.5 xl:w-4 text-white" />
