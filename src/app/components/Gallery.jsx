@@ -6,7 +6,7 @@ const imageGallery = [
   {
     imageSrc: "images/img1.jpg",
     title: "Lapangan Voli",
-    desc: 'Lapangan voli di dusun 10 adalah salah satu sarana olahraga yang ada di Desa Girimulyo. Lapangan voli ini kerap digunakan warga, bukan hanya dari dusun 10, namun juga warga dari Desa Girimulyo. Lapangan voli di Dusun 10 adalah sarana yang selalu ramai, terutama di sore hari karena digunakan oleh warga, pemuda/i, dan anak-anak untuk bermain voli maupun sekedar berkumpul.',
+    desc: 'Lapangan voli di dusun 10 adalah salah satu sarana olahraga yang ada di Desa Giri Mulyo. Lapangan voli ini kerap digunakan warga, bukan hanya dari dusun 10, namun juga warga dari Desa Giri Mulyo. Lapangan voli di Dusun 10 adalah sarana yang selalu ramai, terutama di sore hari karena digunakan oleh warga, pemuda/i, dan anak-anak untuk bermain voli maupun sekedar berkumpul.',
   },
   {
     imageSrc: "images/img2.jpg",
@@ -23,16 +23,28 @@ const imageGallery = [
   {
     imageSrc: "images/img4.jpg",
     title:
-      "Panen Alpukat Siger di Desa Girimulyo, Marga Sekampung, Lampung Timur",
-    desc: "Berkesempatan hadir saat panen alpukat dari satu pohon di halaman rumah Pak Muhajir, warga Desa Girimulyo, Kecamatan Sekampung Udik, Lampung Timur. Dari 1 pohon tersebut menghasilkan sekitar 100 kilogram buah alpukat. Yang super mungkin sekitar 40an kg dari pohon tersebut.",
+      "Penyuluhan pengolahan biji alpukat menjadi tepung/kopi/teh",
+    desc: "Kegiatan penyuluhan pengolahan biji alpukat menjadi tepung/teh/kopi merupakan program kerja yang dilakukan peserta KKN-Tematik Unit 1 di dusun 10. Program kerja ini dilakukan dengan tujuan memberikan informasi atau pengetahuan kepada masyarakat desa Giri Mulyo khususnya dusun 10 tentang pemanfaatan biji alpukat.",
   },
   {
     imageSrc: "images/img5.jpg",
     title:
-      "Panen Alpukat Siger di Desa Girimulyo, Marga Sekampung, Lampung Timur",
-    desc: "Berkesempatan hadir saat panen alpukat dari satu pohon di halaman rumah Pak Muhajir, warga Desa Girimulyo, Kecamatan Sekampung Udik, Lampung Timur. Dari 1 pohon tersebut menghasilkan sekitar 100 kilogram buah alpukat. Yang super mungkin sekitar 40an kg dari pohon tersebut.",
+      "Sentra Produksi di Desa Giri Mulyo, Marga Sekampung, Lampung Timur",
+    desc: "Dusun 10 merupakan pusat produksi yang beragam dengan kontribusi besar pada pengembangan ekonomi lokal. Di dusun ini, terdapat kegiatan produksi logam, kerajinan kayu, tempe, gula merah, cendol, dan bibit alpukat, menciptakan ekosistem ekonomi yang kuat dan berpotensi untuk pengembangan lebih lanjut serta peningkatan kesejahteraan komunitas.",
   },
-  
+  {
+    imageSrc: "images/img6.jpg",
+    title:
+      "Sentra Kuliner di Desa Giri Mulyo, Marga Sekampung, Lampung Timur",
+    desc: "Dusun 10 menjadi sebuah sentra kuliner yang menawarkan beragam hidangan lezat. Keunikan dan keberagaman kuliner di dusun ini menciptakan destinasi kuliner yang menarik bagi warga lokal maupun wisatawan. Salah satu daya tarik utama adalah warung-warung yang menyajikan kuliner tradisional, di antaranya: Pertama, terdapat sajian lezat Sate, yang merupakan hidangan khas Indonesia yang terkenal.",
+  },
+  {
+    imageSrc: "images/img7.jpg",
+    title:
+      "Hasil Kebun di Dusun 10, Desa Giri Mulyo",
+    desc: "Dusun 10 merupakan desa yang sumber mata pencahariannya mayoritas dari hasil kebun. Di dusun ini, terdapat berbagai macam hasil kebun seperti alpukat,buah naga, pepaya, durian, singkong, kelapa, dan lain sebagainya. Banyak tanaman yang dihasilkan dari hasil kebun di Desa Giri Mulyo karena tanahnya yang sangat subur.",
+  },
+
 ];
 
 
