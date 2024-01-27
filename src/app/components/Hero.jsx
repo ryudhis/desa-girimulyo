@@ -6,7 +6,7 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
 function Hero() {
-  const pict = [{ foto: "images/image2.jpg" }, { foto: "images/image1.jpg" }, { foto: "images/image3.jpg" }, {foto: "images/image4.jpg"}];
+  const pict = [{ foto: "images/image2.jpg" }, { foto: "images/image1.jpg" }, {foto: "images/image4.jpg"}];
   const [swiper, setSwiper] = useState(null);
 
   const handlePrevClick = () => {
