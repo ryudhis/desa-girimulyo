@@ -20,12 +20,12 @@ const imageGallery = [
       "Kebudayaan",
     desc: "Setiap tempat memiliki kebudayaan masing-masing, begitupun dengan Desa Giri Mulyo khususnya dusun 10. Kegiatan kebudayaan yang sering diadakan pada dusun 10 ini yaitu kesenian seperti seni tari Jaranan.",
   },
-  {
-    imageSrc: "images/img4.jpg",
-    title:
-      "Penyuluhan pengolahan biji alpukat menjadi tepung/kopi/teh",
-    desc: "Kegiatan penyuluhan pengolahan biji alpukat menjadi tepung/teh/kopi merupakan program kerja yang dilakukan peserta KKN-Tematik Unit 1 di dusun 10. Program kerja ini dilakukan dengan tujuan memberikan informasi atau pengetahuan kepada masyarakat desa Giri Mulyo khususnya dusun 10 tentang pemanfaatan biji alpukat.",
-  },
+  // {
+  //   imageSrc: "images/img4.jpg",
+  //   title:
+  //     "Penyuluhan pengolahan biji alpukat menjadi tepung/kopi/teh",
+  //   desc: "Kegiatan penyuluhan pengolahan biji alpukat menjadi tepung/teh/kopi merupakan program kerja yang dilakukan peserta KKN-Tematik Unit 1 di dusun 10. Program kerja ini dilakukan dengan tujuan memberikan informasi atau pengetahuan kepada masyarakat desa Giri Mulyo khususnya dusun 10 tentang pemanfaatan biji alpukat.",
+  // },
   {
     imageSrc: "images/img5.jpg",
     title:
